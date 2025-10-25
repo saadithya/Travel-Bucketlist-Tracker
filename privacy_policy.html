@@ -14,59 +14,131 @@
       padding: 40px 20px;
       line-height: 1.7;
     }
-    h1 { text-align: center; color: #2b5876; }
-    h2 { color: #2b5876; margin-top: 30px; }
-    p, li { max-width: 900px; margin: 10px auto; }
-    ul { max-width: 900px; margin: 0 auto 20px; }
-    a { color: #2b5876; text-decoration: none; }
-    footer {
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      color: #2b5876;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #2b5876;
       margin-top: 40px;
+      font-size: 1.4em;
+      border-bottom: 2px solid #dfe6ef;
+      padding-bottom: 6px;
+    }
+    h3 {
+      color: #444;
+      margin-top: 25px;
+      font-size: 1.1em;
+    }
+    p, li {
+      font-size: 1rem;
+    }
+    ul {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    a {
+      color: #2b5876;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 50px;
       text-align: center;
       font-size: 0.9em;
       color: #555;
     }
+    .date {
+      text-align: center;
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>Last updated:</strong> October 25, 2025</p>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="date"><strong>Last Updated:</strong> October 25, 2025</p>
 
-  <h2>Introduction</h2>
-  <p>Thank you for using <strong>Travel Bucketlist Tracker</strong> — a Chrome extension that helps users track countries and Indian states they’ve visited through interactive maps. We value your privacy and are committed to protecting your personal information.</p>
+    <h2>1. Introduction</h2>
+    <p>
+      Welcome to <strong>Travel Bucketlist Tracker</strong> — a Chrome extension that helps users 
+      visualize their travels by marking visited countries and Indian states on interactive maps. 
+      Your privacy is important to us. This policy outlines how your data is handled 
+      when using the extension.
+    </p>
 
-  <h2>Information We Collect</h2>
-  <p>We do <strong>not</strong> collect, transmit, or store any personally identifiable information. All your travel data (such as visited countries or states) is stored locally on your device using Chrome’s <code>storage</code> API.</p>
+    <h2>2. Information We Collect</h2>
+    <p>
+      The extension does <strong>not collect, transmit, or store</strong> any personally identifiable information. 
+      All travel data (such as visited countries or states) is stored locally in your browser 
+      using Chrome’s <code>storage</code> API.
+    </p>
 
-  <h2>How Your Data is Used</h2>
-  <ul>
-    <li>Your travel data is used solely to display your personal progress on the maps.</li>
-    <li>No data leaves your device or is shared with any third party.</li>
-  </ul>
+    <h2>3. How Your Data Is Used</h2>
+    <ul>
+      <li>Your marked locations are stored locally and used only to show progress on your personal map.</li>
+      <li>No data leaves your device or is shared with any server.</li>
+      <li>We do not use analytics, cookies, or tracking technologies.</li>
+    </ul>
 
-  <h2>Third-Party Services</h2>
-  <p>This extension uses <strong>Leaflet</strong> and <strong>OpenStreetMap</strong> tiles to render maps. These map tiles are requested securely over HTTPS from their respective servers. No personal data is sent in these requests.</p>
+    <h2>4. Permissions Explained</h2>
+    <h3>4.1 <code>storage</code></h3>
+    <p>Used to save and retrieve your travel progress (visited locations) locally on your device.</p>
 
-  <h2>Permissions Explained</h2>
-  <ul>
-    <li><strong>storage</strong> – to save your visited locations locally.</li>
-    <li><strong>tabs</strong> – to allow popup actions with the current tab (no browsing history or content is read).</li>
-  </ul>
+    <h3>4.2 <code>tabs</code></h3>
+    <p>Used only to support popup interactions with your current browser tab. The extension does not access your browsing history or web content.</p>
 
-  <h2>Data Security</h2>
-  <p>All local data is stored securely in your browser and is not accessible to other websites or extensions. You can clear your data anytime from the extension’s settings or by clearing Chrome’s local storage.</p>
+    <h2>5. Third-Party Services</h2>
+    <p>
+      Travel Bucketlist Tracker uses <strong>Leaflet</strong> and <strong>OpenStreetMap</strong> 
+      for displaying map data. Map tiles are fetched securely over HTTPS directly from their servers. 
+      No personal data is shared or transmitted in these requests.
+    </p>
 
-  <h2>Children’s Privacy</h2>
-  <p>Travel Bucketlist Tracker does not target or knowingly collect any data from children under 13.</p>
+    <h2>6. Data Security</h2>
+    <p>
+      All your data is securely stored within Chrome’s local storage system. 
+      This data is sandboxed to the extension and not accessible to other websites or extensions. 
+      You may clear your travel data anytime through the extension’s settings or by clearing 
+      your browser’s local storage.
+    </p>
 
-  <h2>Changes to This Policy</h2>
-  <p>We may update this Privacy Policy periodically. Any changes will be reflected on this page with a new "Last updated" date.</p>
+    <h2>7. Children’s Privacy</h2>
+    <p>
+      Travel Bucketlist Tracker does not target or knowingly collect data from children under the age of 13. 
+      If you believe a child has submitted personal data, please contact us immediately so we can delete it.
+    </p>
 
-  <h2>Contact</h2>
-  <p>If you have any questions or concerns about this Privacy Policy or your data, please contact us at:</p>
-  <p><a href="mailto:sujith81159@gmail.com">sujith81159@gmail.com</a></p>
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy periodically. Any modifications will be reflected here 
+      with an updated "Last Updated" date. Significant changes will be announced through the extension’s 
+      update notes or official GitHub page.
+    </p>
 
-  <footer>
-    <p>© 2025 Travel Bucketlist Tracker. All rights reserved.</p>
-  </footer>
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have questions or concerns about this Privacy Policy, please contact us at:
+    </p>
+    <p><strong>Email:</strong> <a href="mailto:sujith81159@gmail.com">sujith81159@gmail.com</a></p>
+
+    <footer>
+      <p>© 2025 Travel Bucketlist Tracker. All rights reserved.</p>
+    </footer>
+  </main>
 </body>
 </html>
